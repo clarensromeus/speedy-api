@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "backend-speed"
+version = "0.1.0"
+description = ""
+authors = ["romeus calarens <romeusclarens10@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.108.0"
+motor = "^3.3.2"
+pendulum = "^3.0.0"
+python-jose = { extras = ["cryptography"], version = "^3.3.0" }
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+python-multipart = "^0.0.6"
+fnc = "^0.5.3"
+uvicorn = { extras = ["standard"], version = "^0.25.0" }
+pydantic-settings = "^2.1.0"
+email-validator = "^2.1.0.post1"
+annotated-types = "^0.6.0"
+
+[tool.poetry.scripts]
+start = "backend_speed.run:start_server"
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.8.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
