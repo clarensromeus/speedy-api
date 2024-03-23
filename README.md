@@ -1,4 +1,4 @@
 ## FastApi sampling features
 #### Crud implementation
-#### secure authentication with using JWT
+#### secure authentication implementation with JWT
 #### easy user uploading Image process
